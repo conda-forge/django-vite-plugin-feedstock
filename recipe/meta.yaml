@@ -1,5 +1,5 @@
 {% set name = "django-vite-plugin" %}
-{% set version = "3.0.4" %}
+{% set version = "4.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_vite_plugin-{{ version }}.tar.gz
-  sha256: e5964597daa53ad5992f23e99e61dc4168c07ed51077851a3e3f02989697d41c
+  sha256: 9ddeeb99ea7a81d747f410e6ff58a1671b054af4933fb91bde526096331568ca
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
